@@ -38,20 +38,6 @@
   --cubic-second: cubic-bezier(.3,1.15,0,-1.24);
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 body {
   font-family: "Roboto", sans-serif;
   color: var(--main-color);
@@ -81,6 +67,21 @@ img {
   padding-right: 15px;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/*header-logo*/
 .header-nav__logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -96,6 +97,7 @@ img {
   margin-right: 93px;
 }
 
+/*header*/
 .header {
   outline: 1px solid var(--line);
 }
@@ -502,13 +504,10 @@ img {
           transition-timing-function: var(--cubic);
 }
 
-.social-list__link:hover,
-.social-list__link:focus {
+.social-list__link:hover, .social-list__link:focus {
   background-color: var(--button);
 }
-
-.social-list__link:hover svg,
-.social-list__link:focus svg {
+.social-list__link:hover .social-list__image, .social-list__link:focus .social-list__image {
   fill: var(--main-background);
 }
 
