@@ -61,12 +61,7 @@
     padding: 0;
     margin: 0;
   }
-  
-  .modal-shut:hover svg,
-  .modal-shut:focus svg {
-    fill: var(--button);
-  }
-  
+
   .cross {
     fill: var(--black);
 
@@ -74,7 +69,17 @@
     transition-duration: 250ms;
     transition-timing-function: var(--cubic);
   }
-  
+  // .modal-shut:hover svg,
+  // .modal-shut:focus svg {
+  //   fill: var(--button);
+  // }
+  .modal-shut {
+    &:hover .cross,
+    &:focus .cross {
+      fill: var(--button);
+    }
+  }
+
   .modal-form__field {
     position: relative;
     display: block;
@@ -117,19 +122,33 @@
     display: inline-block;
   }
   
-  .modal-form__input:hover ~ svg,
-  .modal-form__input:focus ~ svg {
-    fill: var(--button);
-  }
+  // .modal-form__input:hover ~ svg,
+  // .modal-form__input:focus ~ svg {
+  //   fill: var(--button);
+  // }
   
-  .modal-form__input:hover,
-  .modal-form__input:focus,
-  .form-comments__text:hover,
-  .form-comments__text:focus {
-    border: 1px solid var(--button);
-    outline: none;
+  // .modal-form__input:hover,
+  // .modal-form__input:focus,
+  // .form-comments__text:hover,
+  // .form-comments__text:focus {
+  //   border: 1px solid var(--button);
+  //   outline: none;
+  // }
+  .modal-form__input {
+    &:hover ~ .modal-form__icon,
+    &:focus ~ .modal-form__icon {
+      fill: var(--button);
+    }
   }
-  
+  .modal-form__input,
+  .form-comments__text {
+    &:hover,
+    &:focus {
+      border: 1px solid var(--button);
+      outline: none;
+    }
+  }
+
   .form-comments {
     margin-bottom: 20px;
     display: block;
