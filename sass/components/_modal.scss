@@ -204,15 +204,24 @@
     transition: border 250ms var(--cubic);
   }
   
-  .form-check__input:checked ~ .form-check__icon {
-    fill: var(--button);
-  }
+  // .form-check__input:checked ~ .form-check__icon {
+  //   fill: var(--button);
+  // }
   
-  .form-check__input:checked ~ .form-check__text {
-    border: 2px solid var(--button);
-    background-origin: border-box;
-  }
+  // .form-check__input:checked ~ .form-check__text {
+  //   border: 2px solid var(--button);
+  //   background-origin: border-box;
+  // }
   
+  .form-check__input {
+    &:checked ~ .form-check__icon {
+       fill: var(--button);
+    }
+    &:checked ~ .form-check__text {
+       border: 2px solid var(--button);
+     
+    }
+  }
   .form-check {
     position: relative;
     display: flex;
