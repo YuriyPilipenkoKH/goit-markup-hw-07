@@ -39,9 +39,22 @@
 
   }
   
-  .projects__link:hover .project-overlay,
-  .projects__link:focus .project-overlay {
-    transform: translateY(0);
+  // .projects__link:hover .project-overlay,
+  // .projects__link:focus .project-overlay {
+  //   transform: translateY(0);
+  // }
+  .projects__link {
+    &:hover,
+    &:focus {
+      box-shadow: var(--box-shadow-fourth);
+
+    }
+
+    &:hover .project-overlay,
+    &:focus .project-overlay {
+      transform: translateY(0);
+    
+    }
   }
   
   .project-overlay__text {
@@ -55,10 +68,11 @@
   }
   
   /* cue */
-  .projects__link:hover,
-  .projects__link:focus {
-     box-shadow: var(--box-shadow-fourth);
-  }
+  // .projects__link:hover,
+  // .projects__link:focus {
+  //    box-shadow: var(--box-shadow-fourth);
+  // }
+  
   
   .projects__title {
     margin-bottom: 4px;
