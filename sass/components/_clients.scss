@@ -48,13 +48,22 @@
      transition-timing-function: var(--cubic);
   }
   
-  .clients__link:hover svg,
-  .clients__link:focus svg {
-    fill: var(--button);
-  }
+  // .clients__link:hover svg,
+  // .clients__link:focus svg {
+  //   fill: var(--button);
+  // }
   
-  .clients__link:hover,
-  .clients__link:focus {
-    border-color: var(--button);
+  // .clients__link:hover,
+  // .clients__link:focus {
+  //   border-color: var(--button);
+  // }
+  .clients__link {
+    &:hover,
+    &:focus {
+      border-color: var(--button);
+    }
+    &:hover .clients__icon,
+    &:focus .clients__icon {
+      fill: var(--button);
+    }
   }
-  
