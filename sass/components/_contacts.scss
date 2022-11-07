@@ -30,36 +30,22 @@
     transition-timing-function: var(--cubic);
   }
   
-  .menu__link {
-    color: var(--main-color);
-  }
-  
-  .current {
-    color: var(--button);
-  }
+
   
   /* Thin blue line */
-  .menu__list .current {
-    position: relative;
-  }
+  // .menu__link:hover,
+  // .contacts__link:hover,
+  // .menu__link:focus,
+  // .contacts__link:focus {
+  //   color: var(--button);
+  // }
+
   
-  .menu__list .current::after {
-    position: absolute;
-    bottom: -1px;
-    display: block;
-    content: "";
-    height: 4px;
-    width: 100%;
-    background-color: var(--button);
-    border-radius: 4px;
-  }
-  
-  /* Thin blue line */
-  .menu__link:hover,
-  .contacts__link:hover,
-  .menu__link:focus,
-  .contacts__link:focus {
-    color: var(--button);
+  .contacts__link {
+    &:hover,
+    &:focus {
+      color: var(--button);
+    }
   }
   
   .contacts__link {
@@ -84,7 +70,14 @@
     transition-timing-function: var(--cubic);
   }
   
-  .contacts__link:hover svg,
-  .contacts__link:focus svg {
-    fill: var(--button);
+  // .contacts__link:hover svg,
+  // .contacts__link:focus svg {
+  //   fill: var(--button);
+  // }
+
+  .contacts__link {
+    &:hover .contacts__icon,
+    &:focus .contacts__icon {
+      fill: var(--button);
+    }
   }

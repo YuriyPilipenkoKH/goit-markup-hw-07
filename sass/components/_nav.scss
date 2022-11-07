@@ -1,0 +1,51 @@
+
+  
+  .header {
+    outline: 1px solid var(--line);
+  }
+  
+  .menu__list, .contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    gap: 50px;
+  }
+  
+  .header-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+  }
+  .menu__link {
+    color: var(--main-color);
+  }
+  
+  .current {
+    color: var(--button);
+  }
+  
+  /* Thin blue line */
+  .menu__list .current {
+    position: relative;
+  }
+  
+  .menu__list .current::after {
+    position: absolute;
+    bottom: -1px;
+    display: block;
+    content: "";
+    height: 4px;
+    width: 100%;
+    background-color: var(--button);
+    border-radius: 4px;
+  }
+
+  .menu__link {
+    &:hover,
+    &:focus {
+      color: var(--button);
+    }
+  }
