@@ -46,13 +46,20 @@
      transition-timing-function: var(--cubic);
   }
   
+
   .clients__link {
     &:hover,
     &:focus {
       border-color: var(--button);
     }
-    &:hover .clients__icon,
-    &:focus .clients__icon {
-      fill: var(--button);
+    &:hover {
+    .clients__icon {
+      fill: var(--button)
+    }
+    } 
+    &:focus  {
+      .clients__icon {
+        fill: var(--button)
+      }
     }
   }

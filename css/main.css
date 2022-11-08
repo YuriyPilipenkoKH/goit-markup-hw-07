@@ -509,7 +509,10 @@ img {
 .social-list__link:hover, .social-list__link:focus {
   background-color: var(--button);
 }
-.social-list__link:hover .social-list__image, .social-list__link:focus .social-list__image {
+.social-list__link:hover .social-list__image {
+  fill: var(--main-background);
+}
+.social-list__link:focus .social-list__image {
   fill: var(--main-background);
 }
 
@@ -579,7 +582,10 @@ img {
 .clients__link:hover, .clients__link:focus {
   border-color: var(--button);
 }
-.clients__link:hover .clients__icon, .clients__link:focus .clients__icon {
+.clients__link:hover .clients__icon {
+  fill: var(--button);
+}
+.clients__link:focus .clients__icon {
   fill: var(--button);
 }
 

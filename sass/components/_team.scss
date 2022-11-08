@@ -97,9 +97,15 @@
     &:focus {
       background-color: var(--button);
     }
-    &:hover .social-list__image,
-    &:focus .social-list__image {
-      fill: var(--main-background);
+    &:hover {
+      .social-list__image {
+        fill: var(--main-background);
+      }
+    }
+    &:focus {
+      .social-list__image  {
+        fill: var(--main-background);
+      }
     }
   }
   
