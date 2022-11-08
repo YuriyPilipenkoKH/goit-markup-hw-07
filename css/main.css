@@ -47,7 +47,7 @@ body {
   background-color: var(--main-background);
 }
 
-h1, h2, h3, p, ul {
+h1, h2, h3, h4, h5, h6, p, ul {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -136,6 +136,7 @@ img {
 /* Thin blue line */
 .menu__list .current {
   position: relative;
+  color: var(--button);
 }
 
 .menu__list .current::after {
@@ -182,7 +183,7 @@ img {
 
 .menu__link,
 .contacts__link,
-.icontacts__icon {
+.contacts__icon {
   color: var(--contact);
   -webkit-transition-property: color;
   transition-property: color;
@@ -192,7 +193,6 @@ img {
           transition-timing-function: var(--cubic);
 }
 
-/* Thin blue line */
 .contacts__link:hover, .contacts__link:focus {
   color: var(--button);
 }
@@ -414,7 +414,6 @@ img {
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
-  list-style-type: none;
 }
 
 .team__list-item {
@@ -532,12 +531,12 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 30px;
 }
 
@@ -1202,7 +1201,7 @@ img {
   font-family: inherit;
   font-weight: 400;
   font-size: 18px;
-  line-height: 28px;
+  line-height: 1.5555555556;
   letter-spacing: 0.03em;
   color: var(--main-background);
   padding: 63px 24px;

@@ -22,7 +22,6 @@
 
     display: flex;
     gap: 30px;
-    list-style-type: none;
   }
   
   .team__list-item {
@@ -93,15 +92,6 @@
     transition-timing-function: var(--cubic);
   }
   
-  // .social-list__link:hover,
-  // .social-list__link:focus {
-  //   background-color: var(--button);
-  // }
-  
-  // .social-list__link:hover svg,
-  // .social-list__link:focus svg {
-  //   fill: var(--main-background);
-  // }
   .social-list__link {
     &:hover,
     &:focus {

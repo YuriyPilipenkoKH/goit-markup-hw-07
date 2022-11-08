@@ -49,10 +49,7 @@
     transition-timing-function: var(--cubic);
   }
   
-  // .hero__button:hover,
-  // .hero__button:focus {
-  //   background-color: var(--button-active);
-  // }
+
   .hero__button {
     &:hover,
     &:focus {

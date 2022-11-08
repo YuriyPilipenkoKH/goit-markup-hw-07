@@ -34,12 +34,7 @@
     transition-timing-function: var(--cubic);
   }
   
-  // .button-list__menu-button:hover,
-  // .button-list__menu-button:focus {
-  //   background-color: var(--button);
-  //   color: var(--main-background);
-  //   box-shadow: var(--box-shadow-third);
-  // }
+
   .button-list__menu-button {
     &:hover,
     &:focus {

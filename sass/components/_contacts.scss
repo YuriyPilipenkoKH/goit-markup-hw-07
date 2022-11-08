@@ -22,7 +22,7 @@
   
   .menu__link,
   .contacts__link,
-  .icontacts__icon {
+  .contacts__icon {
     color: var(--contact);
     -webkit-transition-property: color;
     transition-property: color;
@@ -30,15 +30,6 @@
     transition-timing-function: var(--cubic);
   }
   
-
-  
-  /* Thin blue line */
-  // .menu__link:hover,
-  // .contacts__link:hover,
-  // .menu__link:focus,
-  // .contacts__link:focus {
-  //   color: var(--button);
-  // }
 
   
   .contacts__link {
@@ -49,8 +40,7 @@
   }
   
   .contacts__link {
-    display: -webkit-box;
-    display: -ms-flexbox;
+
     display: flex;
     min-width: 140px;
     justify-content: space-between;
@@ -70,10 +60,6 @@
     transition-timing-function: var(--cubic);
   }
   
-  // .contacts__link:hover svg,
-  // .contacts__link:focus svg {
-  //   fill: var(--button);
-  // }
 
   .contacts__link {
     &:hover .contacts__icon,

@@ -15,8 +15,8 @@
   
   .clients__list {
     display: flex;
- justify-content: center;
     align-items: center;
+    justify-content: center;
     gap: 30px;
   }
   
@@ -34,8 +34,6 @@
   }
   
   .clients__link {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
      align-items: center;
     width: 170px;
@@ -48,15 +46,6 @@
      transition-timing-function: var(--cubic);
   }
   
-  // .clients__link:hover svg,
-  // .clients__link:focus svg {
-  //   fill: var(--button);
-  // }
-  
-  // .clients__link:hover,
-  // .clients__link:focus {
-  //   border-color: var(--button);
-  // }
   .clients__link {
     &:hover,
     &:focus {
