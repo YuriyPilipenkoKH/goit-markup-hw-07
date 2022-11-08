@@ -1,6 +1,7 @@
 :root {
   --main-color: #212121;
   --main-background: #ffffff;
+  --main-transparent: #21212133;
   --button: #2196F3;
   --cue: #2196F3E6;
   --footer: #2F303A;
@@ -25,6 +26,8 @@
       0px 1px 1px rgba(0, 0, 0, 0.12),
        0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
+  --box-shadow-fifth:
+        (0px 4px 4px rgba(0, 0, 0, 0.15));
   --image-border: #EEEEEE;
   --head-image-overlay: #2F303A66;
   --image-overlay: #2F303A66;
@@ -606,11 +609,6 @@ img {
   margin-top: 20px;
 }
 
-.footer-address__list {
-  list-style-type: none;
-  padding: 0;
-}
-
 .footer-address__map {
   font-style: normal;
   font-size: 14px;
@@ -658,13 +656,12 @@ img {
           justify-content: space-between;
 }
 
+/*footer-join*/
 .footer-join {
-  /* margin-left: 70px; */
   width: 206px;
 }
 
 .footer-join__list {
-  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -719,6 +716,7 @@ img {
   color: var(--main-background);
 }
 
+/*footer-form*/
 .footer-form__input {
   padding: 15px 0 15px 15px;
   width: 358px;
@@ -728,8 +726,8 @@ img {
   color: var(--main-background);
   background-color: var(--footer);
   border: 1px solid var(--footer-input);
-  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  -webkit-box-shadow: var(--box-shadow-fifth);
+          box-shadow: var(--box-shadow-fifth);
   border-radius: 4px;
 }
 
@@ -743,35 +741,35 @@ img {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
-  color: var(--mail);
+  color: var(--main-background);
 }
 
 .footer-form input::-moz-placeholder {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
-  color: var(--mail);
+  color: var(--main-background);
 }
 
 .footer-form input:-ms-input-placeholder {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
-  color: var(--mail);
+  color: var(--main-background);
 }
 
 .footer-form input::-ms-input-placeholder {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
-  color: var(--mail);
+  color: var(--main-background);
 }
 
 .footer-form input::placeholder {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
-  color: var(--mail);
+  color: var(--main-background);
 }
 
 .footer-form__button {
@@ -813,8 +811,8 @@ img {
 
 .footer-form__button:hover, .footer-form__button:focus {
   background-color: var(--button-active);
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: var(--box-shadow-fifth);
+          box-shadow: var(--box-shadow-fifth);
 }
 
 .footer-form__icon {
@@ -919,7 +917,7 @@ img {
 
 .modal-form__input {
   width: 100%;
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  border: 1px solid var(--main-transparent);
   border-radius: 4px;
   padding: 12px 0 12px 42px;
   font-size: 12px;
@@ -985,7 +983,7 @@ img {
   width: 448px;
   height: 120px;
   margin: 0 auto;
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  border: 1px solid var(--main-transparent);
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
@@ -999,7 +997,7 @@ img {
 
 .form-check__icon {
   padding: 0;
-  fill: #fff;
+  fill: var(--main-background);
   -webkit-transition-property: fill;
   transition-property: fill;
   -webkit-transition-duration: 250ms;
@@ -1077,13 +1075,13 @@ img {
 
 .modal-form__button:hover, .modal-form__button:focus {
   background-color: var(--button-active);
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: var(--box-shadow-fifth);
+          box-shadow: var(--box-shadow-fifth);
 }
 
 .form-check__contract-terms {
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.7142857143;
   letter-spacing: 0.03em;
   text-decoration: underline;
   color: var(--button);
