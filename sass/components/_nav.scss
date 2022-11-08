@@ -15,9 +15,6 @@
     display: flex;
     align-items: center;
   }
-  .menu__link {
-    color: var(--main-color);
-  }
   
   .current {
     color: var(--button);
@@ -49,4 +46,11 @@
     &:focus {
       color: var(--button);
     }
+    color: var(--main-color);
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--cubic);
+
   }
+

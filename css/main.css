@@ -93,11 +93,12 @@ img {
   letter-spacing: 0.03em;
   color: var(--button);
   text-decoration: none;
+  margin-right: 93px;
+  padding: 25px 0;
 }
 
 .header-nav__logo-link--black {
   color: var(--black);
-  margin-right: 93px;
 }
 
 /*header*/
@@ -125,10 +126,6 @@ img {
           align-items: center;
 }
 
-.menu__link {
-  color: var(--main-color);
-}
-
 .current {
   color: var(--button);
 }
@@ -150,6 +147,15 @@ img {
   border-radius: 4px;
 }
 
+.menu__link {
+  color: var(--main-color);
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: var(--cubic);
+          transition-timing-function: var(--cubic);
+}
 .menu__link:hover, .menu__link:focus {
   color: var(--button);
 }
@@ -178,10 +184,8 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
-  color: var(--main-color);
 }
 
-.menu__link,
 .contacts__link,
 .contacts__icon {
   color: var(--contact);
