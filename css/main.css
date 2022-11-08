@@ -1201,7 +1201,11 @@ img {
   -webkit-box-shadow: var(--box-shadow-fourth);
           box-shadow: var(--box-shadow-fourth);
 }
-.projects__link:hover .project-overlay, .projects__link:focus .project-overlay {
+.projects__link:hover .project-overlay {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+.projects__link:focus .project-overlay {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
@@ -1210,7 +1214,7 @@ img {
   font-family: inherit;
   font-weight: 400;
   font-size: 18px;
-  line-height: 1.5555555556;
+  line-height: 28px;
   letter-spacing: 0.03em;
   color: var(--main-background);
   padding: 63px 24px;
