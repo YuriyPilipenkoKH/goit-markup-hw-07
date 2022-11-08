@@ -32,10 +32,12 @@
     transition-timing-function: var(--cubic);
   }
   
-  .footer-address__item:not(:last-child) {
-    margin-bottom: 9px;
+
+  .footer-address__item {
+    &:not(:last-child) {
+      margin-bottom: 9px;
+    }
   }
-  
 
   .footer-address__mail,
   .footer-address__tel {
@@ -49,5 +51,5 @@
 
     display: flex;
     align-items: baseline;
-     justify-content: space-between;
+    justify-content: space-between;
   }

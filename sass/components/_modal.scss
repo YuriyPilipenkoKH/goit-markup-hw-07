@@ -25,8 +25,10 @@
     pointer-events: none;
   }
   
-  .backdrop.is-hidden .modal {
-    transform: translate(-50%, -50%) scale(0.2);
+  .backdrop.is-hidden {
+    .modal {
+      transform: translate(-50%, -50%) scale(0.2);
+    }
   }
   
   .modal {
@@ -71,12 +73,17 @@
   }
  
   .modal-shut {
-    &:hover .cross,
-    &:focus .cross {
-      fill: var(--button);
+    &:hover {
+      .cross {
+        fill: var(--button);
+      }
+    }
+    &:focus {
+      .cross {
+        fill: var(--button);
+      }
     }
   }
-
   .modal-form__field {
     position: relative;
     display: block;
@@ -190,16 +197,17 @@
     transition: border 250ms var(--cubic);
   }
   
-  
   .form-check__input {
-    &:checked ~ .form-check__icon {
-       fill: var(--button);
-    }
-    &:checked ~ .form-check__text {
-       border: 2px solid var(--button);
-     
+    &:checked {
+      ~.form-check__icon {
+        fill: var(--button);
+      }
+      ~.form-check__text {
+        border: 2px solid var(--button);
+      }
     }
   }
+
   .form-check {
     position: relative;
     display: flex;

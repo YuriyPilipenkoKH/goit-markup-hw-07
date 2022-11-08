@@ -908,7 +908,10 @@ img {
           transition-timing-function: var(--cubic);
 }
 
-.modal-shut:hover .cross, .modal-shut:focus .cross {
+.modal-shut:hover .cross {
+  fill: var(--button);
+}
+.modal-shut:focus .cross {
   fill: var(--button);
 }
 
